@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173", "https://nuclio.nimbel.net"],
 };
 
 app.use(cors(corsOptions));
